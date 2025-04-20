@@ -1,0 +1,19 @@
+body { margin: 0; padding: 20px; font-family: Arial, sans-serif; }
+#map { height: 60vh; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.3); }
+#timeline { height: 30vh; margin-top: 20px; }
+#controls { position: absolute; top: 20px; right: 20px; z-index: 1000; }
+.analyze-btn { 
+    background: #4CAF50; color: white; border: none; padding: 12px 24px;
+    border-radius: 4px; cursor: pointer; font-size: 16px;
+}
+.hidden { display: none; }
+.spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(0,0,0,.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
